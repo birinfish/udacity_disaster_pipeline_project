@@ -10,6 +10,7 @@
       To run the script, input syntax as shown below. It requires three additional arguments
       as shown the example below
       (two input csv file names, a database path setup by you)
+      
       Ex:
         `python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db`
 
@@ -23,6 +24,7 @@
       To run the script, input syntax as shown below. It requires two additional arguments
       as shown the example below
       (a database path setup by you, a pickle file path for your model)
+      
       Ex:
         `python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl`
 

@@ -1,4 +1,4 @@
-# Disaster Response Pipeline Project
+# Nanodegree Data Scientist Project 2: Disaster Response Pipeline Project
 
 ### Instructions:
 1. Step 1: run process_data.py

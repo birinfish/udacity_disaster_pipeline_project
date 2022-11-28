@@ -1,5 +1,15 @@
 # Nanodegree Data Scientist Project 2: Disaster Response Pipeline Project
 
+### Introduction:
+It is a project to analyze text messages that sent during natural disasters and create a machine learning model
+which could help disaster response organizations understand new text messages, classfying them by the model.
+
+The process for the analysis largely has three steps. First, text messages given in a csv file are processed 
+through an ETL pipeline. The transformed data is used to build a machine learning model. Finally, the machine
+learning model is included into an web app to be used to categorize new messages into 36 keywords.
+Additionally, three visulalizations about the data sets used for training the model will also be displayed
+on the web app.
+
 ### Instructions:
 1. Step 1: run process_data.py
 

@@ -10,6 +10,7 @@ learning model is included into an web app to be used to categorize new messages
 Additionally, three visulalizations about the data sets used for training the model will also be displayed
 on the web app.
 
+
 ### Instructions:
 1. Step 1: run process_data.py
 
@@ -46,3 +47,22 @@ on the web app.
 
      To run the script, simply input syntax "python run.py" then you can see the results in a web address 
      http://0.0.0.0:3001/ or an address you will find from your terminal
+
+
+### File in repository:
+This project file has a structure as shown below:
+
+app (Step 3)
+| - template
+| |- master.html # main page of web app
+| |- go.html # classification result page of web app
+|- run.py # Flask file that runs app
+data (Step 1)
+|- disaster_categories.csv # input data to process
+|- disaster_messages.csv # input data to process
+|- process_data.py # script to run an ETL pipeline
+|- InsertDatabaseName.db # database to save clean data to
+models (Step 2)
+|- train_classifier.py # script to train data, build a ML model
+|- classifier.pkl # saved model
+README.md

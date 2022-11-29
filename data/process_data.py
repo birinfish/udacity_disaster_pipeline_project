@@ -46,11 +46,15 @@ def clean_data(df:pd.DataFrame):
         # convert dtype of the columns with extracted strings 
         # from string to numeric
         categories[column] = pd.to_numeric(categories[column])
-        
+
     # drop the column "categories" and remerge the data frame
     # with the separate columns restructured with a new dataframe "categories"
     df = df.drop(columns= "categories")
     df = pd.concat([df, categories], axis =1)
+
+    # for columns having values which are not 0 or 1, replace the values
+    # with the given data, the column "related" has some values "2"
+    df["related"].replace(2,1,inplace=True) 
     
     # remove duplicates
     df = df.drop_duplicates()
